@@ -62,7 +62,7 @@ function TrackPage(props) {
                         Lyricify
                     </a>
                 </h1>
-                <input placeholder="search a track" onChange={(e) => setSearch(e.target.value)}
+                <input placeholder="search for a track" onChange={(e) => setSearch(e.target.value)}
                     value={search}> 
                 </input>
             </div>

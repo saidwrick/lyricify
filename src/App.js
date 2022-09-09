@@ -121,6 +121,7 @@ function App() {
         })()
     }, [offset])
 
+    // change header colour when scrolled past
     const [headerChange, setHeaderChange] = useState(false);
 
     function handleScroll () {
@@ -150,7 +151,7 @@ function App() {
                         Lyricify
                     </a>
                 </h1>
-                <input placeholder="search a track" 
+                <input placeholder="search for a track" 
                     onChange={handleSearchInput} 
                     value={search}> 
                 </input>
@@ -165,7 +166,7 @@ function App() {
             </div>
             :
             <div className="no-search">
-                search a track to begin :)
+                search for a track to begin :)
             </div> }
         </div>
     );
