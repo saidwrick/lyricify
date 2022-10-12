@@ -10,6 +10,7 @@ function App() {
     const [searchParams, setSearchParams] = useSearchParams({});
     const [search, setSearch] = useState(searchParams.get("search") ? searchParams.get("search") : "")
     const [offset, setOffset] = useState(0)
+    const [headerChange, setHeaderChange] = useState(false);
 
     function handleSearchInput(e) {
         setSearch(e.target.value)
@@ -122,7 +123,6 @@ function App() {
     }, [offset])
 
     // change header colour when scrolled past
-    const [headerChange, setHeaderChange] = useState(false);
 
     function handleScroll () {
         const position = window.scrollY;

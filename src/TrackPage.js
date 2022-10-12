@@ -55,7 +55,7 @@ function TrackPage(props) {
     }
     
     return (
-        <div>
+        <>
             <div className="search">
                 <h1>
                     <a href="/">
@@ -82,7 +82,7 @@ function TrackPage(props) {
 
                 </div>
             </div>
-        </div>
+        </>
     );
 }
 
