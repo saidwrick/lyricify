@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/saidwrick/lyricify/static/css/main.d066190b.css",
-    "main.js": "/saidwrick/lyricify/static/js/main.d9e7fa75.js",
-    "index.html": "/saidwrick/lyricify/index.html",
-    "main.d066190b.css.map": "/saidwrick/lyricify/static/css/main.d066190b.css.map",
-    "main.d9e7fa75.js.map": "/saidwrick/lyricify/static/js/main.d9e7fa75.js.map"
+    "main.css": "/lyricify/static/css/main.d066190b.css",
+    "main.js": "/lyricify/static/js/main.d9e7fa75.js",
+    "index.html": "/lyricify/index.html",
+    "main.d066190b.css.map": "/lyricify/static/css/main.d066190b.css.map",
+    "main.d9e7fa75.js.map": "/lyricify/static/js/main.d9e7fa75.js.map"
   },
   "entrypoints": [
     "static/css/main.d066190b.css",
