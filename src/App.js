@@ -1,7 +1,7 @@
 import './App.css';
 import Card from "./Card.js";
 import React, { useState, useEffect } from "react";
-import {useSearchParams} from "react-router-dom";
+import {useSearchParams, Link} from "react-router-dom";
 
 function App() {
 
@@ -147,9 +147,9 @@ function App() {
         <div className="App">
             <div className={headerChange ? "search scroll" : "search"}>
                 <h1>
-                    <a href="/">
+                    <Link to ="/">
                         Lyricify
-                    </a>
+                    </Link>
                 </h1>
                 <input placeholder="search for a track" 
                     onChange={handleSearchInput} 

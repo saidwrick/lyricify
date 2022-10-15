@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams, Link } from "react-router-dom";
 
 function TrackPage(props) {
 
@@ -58,9 +58,9 @@ function TrackPage(props) {
         <>
             <div className="search">
                 <h1>
-                    <a href="/">
+                    <Link to="/">
                         Lyricify
-                    </a>
+                    </Link>
                 </h1>
                 <input placeholder="search for a track" onChange={(e) => setSearch(e.target.value)}
                     value={search}> 
@@ -69,6 +69,7 @@ function TrackPage(props) {
             <div className="track-page">
                 <div className="spotify-player">
                     <iframe style={{borderRadius: "12px"}}
+                        onLoad={e=>console.log(e)}
                         src={"https://open.spotify.com/embed/track/" + id}
                         width="360" height="360" frameBorder="0">
                     </iframe>
