@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "./static/css/main.a93306ad.css",
-    "main.js": "./static/js/main.36ae0ec4.js",
-    "index.html": "./index.html",
-    "main.a93306ad.css.map": "./static/css/main.a93306ad.css.map",
-    "main.36ae0ec4.js.map": "./static/js/main.36ae0ec4.js.map"
+    "main.css": "/lyricify/static/css/main.a93306ad.css",
+    "main.js": "/lyricify/static/js/main.ce2021c8.js",
+    "index.html": "/lyricify/index.html",
+    "main.a93306ad.css.map": "/lyricify/static/css/main.a93306ad.css.map",
+    "main.ce2021c8.js.map": "/lyricify/static/js/main.ce2021c8.js.map"
   },
   "entrypoints": [
     "static/css/main.a93306ad.css",
-    "static/js/main.36ae0ec4.js"
+    "static/js/main.ce2021c8.js"
   ]
 }
