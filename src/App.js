@@ -1,7 +1,7 @@
 import './App.css';
 import Card from "./Card.js";
 import React, { useState, useEffect } from "react";
-import {useSearchParams, Link} from "react-router-dom";
+import {useSearchParams} from "react-router-dom";
 
 function App() {
 
@@ -20,8 +20,8 @@ function App() {
         try {
             let bodyParams = {
                 grant_type : "client_credentials",
-                client_id: "4161727968734678b0e978b4a48ce9b1",
-                client_secret: "6dcfac30e2b84cf1aa8bada34d2dfaf3"
+                client_id: process.env.REACT_APP_SPOTIFY_CLIENT_ID,
+                client_secret: process.env.REACT_APP_SPOTIFY_CLIENT_SECRET
             }
             let body = new URLSearchParams(bodyParams)
 
@@ -147,9 +147,9 @@ function App() {
         <div className="App">
             <div className={headerChange ? "search scroll" : "search"}>
                 <h1>
-                    <Link to ="/">
+                    <a href ="/">
                         Lyricify
-                    </Link>
+                    </a>
                 </h1>
                 <input placeholder="search for a track" 
                     onChange={handleSearchInput} 

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate, useParams, Link } from "react-router-dom";
+import { useNavigate, useParams} from "react-router-dom";
 
 function TrackPage(props) {
 
@@ -15,7 +15,7 @@ function TrackPage(props) {
             let splitTitle = title.split(" - ");
             splitTitle = splitTitle[0].split("(");
             
-            let res = await fetch("https://api.genius.com/search?q=" + artist + " " + splitTitle[0] + "&access_token=XK4yY2e-BJGq50reeLmBD5NUf-nSm0SCFyQD48G-L6fsc6vSCJDV53dA5JYvWF4R");
+            let res = await fetch("https://api.genius.com/search?q=" + artist + " " + splitTitle[0] + "&access_token=" + process.env.REACT_APP_GENIUS_ACCESS_TOKEN);
             console.log(res)
             
             let resJson = await res.json();
@@ -58,9 +58,9 @@ function TrackPage(props) {
         <>
             <div className="search">
                 <h1>
-                    <Link to="/">
+                    <a href="/">
                         Lyricify
-                    </Link>
+                    </a>
                 </h1>
                 <input placeholder="search for a track" onChange={(e) => setSearch(e.target.value)}
                     value={search}> 

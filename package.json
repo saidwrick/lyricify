@@ -1,6 +1,5 @@
 {
   "name": "lyricify",
-  "homepage" : "https://saidwrick.github.io/lyricify/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

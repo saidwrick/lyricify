@@ -6,7 +6,7 @@ import ErrorPage from "./ErrorPage.js"
 const RouteSwitch = () => {
 
     return (
-        <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <BrowserRouter>
             <Routes>
                 <Route path="/track/:artist/:title/:id" element={<TrackPage />} />
                 <Route path="/" element={<App />} />
