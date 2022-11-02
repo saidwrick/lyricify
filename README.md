@@ -1,5 +1,5 @@
 # Lyricify
-Web App that allows users to search for songs, and displays an embedded Spotify preview, as well as a link to the lyrics from Genius (lyric results may vary, especially for more obscure songs).
+Web App that allows users to search for songs. Results are displayed with an embedded Spotify preview and link to the lyrics from Genius (lyric results may vary, especially for more obscure songs).
 
 Live link: https://lyricify.netlify.app/
 
